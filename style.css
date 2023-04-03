@@ -1,0 +1,407 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/bg-home.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding-top: 50px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #241c18;
+    font-family: 'Lora';
+    padding: 5px 10px 40px;
+}
+
+.menu .active {
+    text-decoration: none;
+    color: #241c18;
+    font-family: 'Lora';
+}
+
+.menu li:before {
+    content: '\2022';
+    margin: 0 4px;
+    color: #826b60;
+}
+
+.logo {
+    width: 290px;
+    height: 250px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 250px;
+    line-height: 85px;
+    background-image: url('img/bg-logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Oswald Regula';
+    font-size: 50px;
+}
+
+.logo .texTop {
+    color: #e4dddb;
+}
+
+.logo .texButtom {
+    color: #241c18;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3EFEE;
+}
+
+#about button {
+    border: none;
+    cursor: pointer;
+    opacity: 50%;
+    transition: 0.3s;
+}
+
+#about button:hover {
+    opacity: 100%;
+}
+
+#about div {
+    display: flex;
+    align-self: flex-end;
+}
+
+#about div img {
+    height: 574px;
+}
+
+#music {
+    width: 100%;
+    height: 100vh;
+    margin-left: -90px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#music img {
+    width: 736px;
+}
+
+.tabela {
+    width: 500px;
+    margin-left: 170px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.album .titu {
+    font-family: 'Oswald Regula';
+    color: #826b60;
+}
+
+.titulo {
+    font-family: 'Oswald Regula';
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.circulo p {
+    height: 10px;
+    width: 10px;
+    margin-left: -50px;
+    background-color: #e4dddb;
+    border-radius: 50%;
+}
+
+.ano {
+    font-family: 'Oswald Regula';
+    color: #826b60;
+}
+
+.list p {
+    margin: 10px;
+    font-family: 'Oswald Regula';
+    background-color: #e4dddb;
+    text-align: center;
+    color: #826b60;
+}
+
+.buy p {
+    font-family: 'Oswald Regula';
+    background-color: #826b60;
+    text-align: center;
+    color: #e4dddb;
+    padding: 0 10px;
+}
+
+.playmusic h2 {
+    font-family: 'Oswald Regula';
+    margin-bottom: 10px;
+}
+
+.playmusic h3 {
+    font-family: 'Oswald Light';
+    margin-bottom: 5px;
+}
+
+.playmusic p {
+    font-family: 'Lora Italic';
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    width: 450px;
+    height: 38px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    border: none;
+    opacity: 70%;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    opacity: 100%;
+}
+
+.buttons img {
+    max-width: 42px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 450px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 450px;
+    height: 5px;
+    background: #e4dddb;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #826b60;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.play {
+    margin-left: 100px;
+}
+
+.playlist {
+    margin-top: 100px;
+    width: 450px;
+}
+
+.playlist h3 {
+    margin-bottom: 20px;
+    font-family: 'Oswald Light';
+}
+
+.playlist .lista {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist .lista img {
+    max-width: 10px;
+}
+
+.playlist .lista p {
+    font-family: 'Lora Italic';
+    font-size: 12px;
+}
+
+#tours {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #F3EFEE;
+}
+
+#tours h2 {
+    padding-bottom: 30px;
+    font-family: 'Oswald Regula';
+}
+
+.tourlist {
+    width: 100%;
+    font-family: 'Oswald Light';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tourlista {
+    width: 65%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tourlista .buy {
+    background-color: #826b60;
+    color: #e4e4e4;
+    padding: 0 15px;
+}
+
+.tourlista img {
+    width: 80px;
+}
+
+.tourlista .album {
+    display: flex;
+    align-items: center;
+}
+
+.tourlista .album p {
+    margin-left: 20px;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/bg-contact.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+#contact .titulo {
+    color: #241c18;
+    font-family: 'Oswald Regula';
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+#contact .tel {
+    color: #e4dddb;
+    font-family: 'Oswald Regula';
+    font-size: 60px;
+}
+
+#contact .Busca-e-midia {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .busca {
+    width: 260px;
+    height: 25px;
+    margin-top: 20px;
+    color: #e4dddb;
+    font-family: 'Oswald Regula';
+    background-color: #241c18;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact p {
+    color: #e4dddb;
+}
+
+.Busca-e-midia input {
+    background-color: #8f7b72;
+}
+
+#contact .Busca-e-midia img {
+    height: 35px;
+    margin-left: 35px;
+    margin-top: 15px;
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+#contact .Busca-e-midia img:hover {
+    opacity: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+footer .credito {
+    font-family: 'Lora';
+}
+
+footer .credito a {
+    text-decoration: none;
+    color: #e4dddb;
+}
+
+.menuContact {
+    display: flex;
+    list-style: none;
+    opacity: 100%;
+}
+
+.menuContact li a {
+    text-decoration: none;
+    color: #e4dddb;
+    font-family: 'Lora';
+    padding: 5px 10px 40px;
+}
+
+.menuContact .active {
+    text-decoration: none;
+    color: #e4dddb;
+    font-family: 'Lora';
+    padding: 0px 10px 40px;
+}
+
+.menuContact .active,
+li a:hover {
+    background-image: url('img/Action-menu.png');
+    background-repeat: no-repeat;
+    background-position: 9px;
+}
+
+.menuContact li:before {
+    content: '\2022';
+    margin: 0 4px;
+    color: #826b60;
+}
